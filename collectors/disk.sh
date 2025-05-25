@@ -1,8 +1,5 @@
 #!/bin/bash
 disk_usage(){
-    # Get current timestamp (for filename)
-    timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-
     # Get disk space usage
     disk_usage=$(df -h)
 

@@ -17,3 +17,13 @@ get_list_of_service_users(){
     awk -F: '$3 >= 1 && $3 < 1000 {print $3 "   " $1 "  " $7}' /etc/passwd
 }
 
+get_users_report(){
+    echo "Users Report"
+    echo "============"
+    get_num_of_users
+    echo "=================================="
+    get_list_of_normal_users
+    echo "=================================="
+    get_list_of_service_users
+}
+

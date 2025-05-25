@@ -1,9 +1,6 @@
 #!/bin/bash
 network() {
 
-    # Get current timestamp (for filename)
-    timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
-
     # Get network statistics
     network_usage=$(ip -s link)
 
